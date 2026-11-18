@@ -1,0 +1,10 @@
+---
+- name: DET-112-A telemetry validation
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: Confirm telemetry test
+      ansible.builtin.debug:
+        msg: "DET-112-A telemetry validation completed"
